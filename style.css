@@ -1,105 +1,75 @@
-:root {
+body{
     font-family: Source Sans Pro,sans-serif;
-    font-size: 25px;
+font-size: 25px;
 }
-html {
-    box-sizing: border-box;
-}
-.tcenter {
+.container{
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
+    margin-top: 100px;
 }
-.hidden {
-    display: none;
-}
-.topBorder {
-    border-top: 2px solid #344861 !important;
-}
-.bottomBorder {
-    border-bottom: 2px solid #344861 !important;
-}
-.rightBorder {
-    border-right: 2px solid #344861 !important;
-}
-.leftBorder {
-    border-left: 2px solid  #344861 !important;
-}
-.setup {
-    padding-left: 25%;
-    padding-right: 25%;
-}
-.diff {
+.level-buttons{
     display: flex;
-    align-items: center;
-    padding: 10px 50px;
     justify-content: space-between;
 }
-.diffbtn {
-    text-align: center;
-    justify-self: center;
-    width: auto;
-}
-.cell {
-    border: 1px #bec6d4 solid;
+.table-container{
     display: flex;
-    align-items : center;
     justify-content: center;
-    margin: 0px;
-    width: 60px;
-    height: 60px;
-    vertical-align: middle;
+    padding:20px;
+}
+td{
+    
+    width:60px;
+    height:60px;
+    margin:0;
+    padding:0;
     text-align: center;
-    user-select: none;
+    border: 1px solid #bec6d4;
+}
+table{
+    border:2px solid #344861;
+}
+input{
+    
+    width:100%;
+    height:100%;
+    padding:0px;
+    text-align: center;
+    outline:none;
+    border:none;
+    font-size: 40px;
+}
+table,tr,td{
+    border-collapse: collapse;
+}
+/*input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* f** too many borders :/ */
+.cell-3,.cell-12,.cell-21,.cell-30,.cell-39,.cell-48,.cell-57,.cell-66,.cell-75{
+    border-right: 2px solid #344861;
+}
+.cell-6,.cell-15,.cell-24,.cell-33,.cell-42,.cell-51,.cell-60,.cell-69,.cell-78{
+    border-right: 2px solid #344861;
+}
+.cell-19,.cell-20,.cell-21,.cell-22,.cell-23,.cell-24,.cell-25,.cell-26,.cell-27{
+    border-bottom: 2px solid #344861;
+}
+.cell-46,.cell-47,.cell-48,.cell-49,.cell-50,.cell-51,.cell-52,.cell-53,.cell-54{
+    border-bottom: 2px solid #344861;
+}
+button{
+    font-size: 25px;
+    border:none;
+}
+input:hover{
+    background-color: rgb(170, 212, 246) !important;
+}
 
-}
-.cell:hover {
-    background-color: #99badd;
-}
-.game {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#board {
-    padding-top: 10px;
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    width: 600px;
-    height: 600px;
-    min-width: 600px;
-    min-height: 600px;
-    padding-bottom: 0;
-}
-.val {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-}
-.resval {
-    display: flex;
-    justify-content: center;
-    column-gap: 25px;
-}
-.prefilled {
-    background-color: #dfe5f0 !important;
-    user-select: none;
-    color: rgb(14, 7, 119);
-}
-p.highlighted {
-    background-color: rgb(226, 244, 250);
-}
-p.selected {
-    background-color: lightblue;
-}
-p.incorrect {
-    color: red !important;
-}
-p.modified {
-    background-color: rgb(129, 194, 224);
-}
-p.dup {
-    background-color: #99badd !important;
-}
